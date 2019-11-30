@@ -1,2 +1,30 @@
-# House_Price_Predicted
-《Data Mining Class》final project，It's an easy competition in kaggle.
+# 波士顿房价预测
+## 《数据挖掘》课的期末大作业，Kaggle上的入门题  [波士顿房价预测](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)
+### 项目分为两个部分： 数据预处理 和 构建回归预测模型
+#### 数据预处理包括：
+**1.去除缺失值多的特征（缺失率大于10%）**  
+**2.进行类型转换：**  
+①将实际类别数据但读入为数字型的数据转成str。  
+②将数字型数据全部变为float便于后面归一化。  
+**3.对缺失值进行填充：**  
+将category类型采用最多值填充,numerical类型采用均值填充。  
+**4.对类别类型的值采用one-hot编码**  
+**5.对所有数字类型的数据进行归一化**  
+**6.测试集数据结果进行平滑处理**  
+**7.去除孤立点**  
+#### 回归模型：
+**回归模型采用集成模型,包括：**
+岭回归模型  
+袋装法模型  
+核函数岭回归模型  
+贝叶斯回归模型  
+增强树模型  
+**以及深度神经网络**
+#### 集成模型与深度深刻网络模型加权得到最终预测结果
+## 最终结果 RMSE ：0.13363  排名2153
+### 用到的库： 
+**sklearn**  
+**xgboost**  
+**keras**  
+**tensorflow**  
+
